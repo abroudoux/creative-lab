@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 
+:root {
+    --purple: #8E4EC6;
+    --purple-light: #D19DFF;
+    --black: #18111B;
+    --white: #ECD9FA;
+    --grey-light: #EBEDF0;
+    --grey-light-lighten: #f5f6f7;
+    --grey-dark: #2F2F2F;
+    --grey-dark-lighten: #393939;
+}
+
 * { 
     scrollbar-width: none ;
     ms-overflow-style: none;
@@ -18,19 +29,21 @@ body::-webkit-scrollbar {
 	display: none;
 }
 
-:root {
-    --purple: #8E4EC6;
-    --purple-light: #D19DFF;
-    --black: #18111B;
-    --white: #ECD9FA;
-    --grey-light: #EBEDF0;
-    --grey-light-lighten: #f5f6f7;
-    --grey-dark: #2F2F2F;
-    --grey-dark-lighten: #393939;
+.title {
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
-textarea {
-    resize: none;
+.bubble {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.4);
+    transition: height 0.1s, width 0.1s, background-color 0.1s, all 0.1s;
+    z-index: 9999;
+    backdrop-filter: blur(5px) brightness(120%);
 }
 
 .flex-col-center {

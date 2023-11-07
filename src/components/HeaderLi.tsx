@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import { Link, useLocation } from "react-router-dom";
 
 
 type HeaderLiProps = {
@@ -9,11 +8,9 @@ type HeaderLiProps = {
 
 const HeaderLi : FC<HeaderLiProps> = ( props ) => {
 
-    const location = useLocation();
-
     return (
 
-        <li className={`p-4 text-lg ${location.pathname === props.path ? "active" : ""}`}>
+        <li className="p-4 text-lg">
             <a href={ props.path }>
                 { props.name }
             </a>

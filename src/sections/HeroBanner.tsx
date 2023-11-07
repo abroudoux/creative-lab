@@ -1,19 +1,17 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-
-import "../style/components/herobanner.scss";
-
+import Spline from '@splinetool/react-spline';
 
 
 export default function HeroBanner() {
 
     return (
 
-        <section className="py-32 px-16 flex-row-center-between">
+        <section className="px-20 py-44 flex-row-center-between">
 
-            <div className="w-2/4 h-auto flex flex-col gap-2">
-                <p className="text-4xl font-light">dawn</p>
+            <div className="w-2/4 h-auto py-6 flex flex-col gap-2">
+                <p className="text-4xl text-grey-light font-extralight title">dawn</p>
                 <h1 className="text-8xl font-semibold pb-10">Les cartes nouvelle génération</h1>
                 <ul className="flex-row-center">
                     <li className="p-4">
@@ -30,8 +28,8 @@ export default function HeroBanner() {
                 </ul>
             </div>
 
-            <div>
-                <h1 className="text-7xl">Hero Banner</h1>
+            <div className="w-full h-full bg-white flex-row-center-center">
+                <Spline scene="https://prod.spline.design/nnJ2flysz6CEwEX1/scene.splinecode"/>
             </div>
 
         </section>
