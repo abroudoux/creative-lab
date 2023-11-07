@@ -35,15 +35,19 @@ body::-webkit-scrollbar {
 
 .bubble {
     position: fixed;
-    width: 30px;
-    height: 30px;
+    pointer-events: none;
+    width: 40px;
+    height: 40px;
     border: 1px solid white;
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.4);
     transition: height 0.1s, width 0.1s, background-color 0.1s, all 0.1s;
+    backdrop-filter: blur(5px) brightness(100%);
     z-index: 9999;
-    backdrop-filter: blur(5px) brightness(120%);
+}
+
+.border-gradient {
+    background: -webkit-linear-gradient(var(--purple), var(--purple-light));
 }
 
 .flex-col-center {
@@ -75,7 +79,7 @@ body::-webkit-scrollbar {
 }
 
 .btn-purple {
-    @apply btn bg-purple text-white hover:bg-purple-light;
+    @apply btn bg-purple text-white hover:bg-purple-light border-2 border-purple hover:border-purple-light;
 }
 
 .btn-purple-icon {

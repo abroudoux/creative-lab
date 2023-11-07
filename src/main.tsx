@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 	<BrowserRouter>
 		<Header />
   		<Routes>
-				<Route path="/" element={<Home />}></Route>
+				<Route path="/" element={<Home/>}></Route>
 		</Routes>
 		<Footer />
 	</BrowserRouter>

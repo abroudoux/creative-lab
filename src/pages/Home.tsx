@@ -22,7 +22,7 @@ export default function Home() {
 		return () => {
 		  	window.removeEventListener('mousemove', (e) => handleBubble(e));
 		};
-	  }, []);
+	}, []);
 
 	return (
 

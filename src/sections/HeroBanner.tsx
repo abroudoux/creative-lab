@@ -11,12 +11,12 @@ export default function HeroBanner() {
         <section className="px-20 py-44 flex-row-center-between">
 
             <div className="w-2/4 h-auto py-6 flex flex-col gap-2">
-                <p className="text-4xl text-grey-light font-extralight title">dawn</p>
+                <span className="text-4xl text-grey-light font-extralight title">dawn</span>
                 <h1 className="text-8xl font-semibold pb-10">Les cartes nouvelle génération</h1>
                 <ul className="flex-row-center">
-                    <li className="p-4">
+                    <li className="p-4 pl-0">
                         <a href="#about" className="btn-purple-icon">
-                            Discover
+                            Découvrir
                             <FontAwesomeIcon icon={faArrowRight} />
                         </a>
                     </li>
