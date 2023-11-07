@@ -1,5 +1,9 @@
 import React from 'react';
 
+import HeroBanner from '../components/HeroBanner';
+import About from '../components/About';
+import Products from '../components/Products';
+
 
 export default function Home() {
 
@@ -7,7 +11,9 @@ export default function Home() {
 
 		<section>
 
-			<h1>Home</h1>
+			<HeroBanner/>
+			<About/>
+			<Products/>
 
 		</section>
   	)
