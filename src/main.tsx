@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 import './style/index.css';
+import '@radix-ui/themes/styles.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
