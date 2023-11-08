@@ -39,14 +39,14 @@ export default function About() {
                     <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
                         <div className="lg:pr-4">
                             <div className="lg:max-w-lg">
-                                <h1 className="mt-2 text-7xl text-white font-bold tracking-tight sm:text-4xl">Découvrez Dawn, le jeu de cartes du futur</h1>
+                                <h2 className="mt-2 text-4xl text-white font-bold tracking-tight sm:text-4xl">Découvrez Dawn, le jeu de cartes du futur</h2>
                                 <p className="mt-6 text-lg leading-8 text-grey-light">
                                     Entrez dans une nouvelle ère du divertissement. Dawn est une véritable révolution technologique au service de l'élégance et du plaisir.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+                    <div className="ml-12 mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
                         <img
                             className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
                             src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
@@ -81,33 +81,6 @@ export default function About() {
                     </div>
                 </div>
             </div>
-
-            {/* <h2 className="text-5xl pb-12 font-semibold">Découvrez Dawn, le jeu de cartes du futur</h2>
-
-            <p className="text-lg pb-6">
-                Entrez dans une nouvelle ère du divertissement. Dawn est une véritable révolution technologique au service de l'élégance et du plaisir.
-            </p>
-            <p className="text-lg pb-6">
-                Chaque carte est équipée d'un écran d'une finesse exceptionnelle capable de changer d'apparence en un instant. Grâce à une technologie de pointe, vos cartes prenent vies, s'adaptant à vos choix de jeux.
-            </p>
-
-            <p className="text-lg pb-6">
-                Pour une soirée Uno effervescente, une partie de poker enflammée ou une séance de belote entre amis : tout est possible avec Dawn. Plus besoin de mutiplier les jeux de cartes.
-            </p>
-
-            <p className="text-lg pb-6">
-                Dawn repose sur des fondements solides. Impossible de tricher grâce à notre technologie avancée. Chaque carte est conçue pour garantir l'équité et l'intégrité du jeu, quelque soit le jeu auqeul vous jouez.
-                Que vous soyez un joueur professionnel ou un novice, Dawn vous assure des parties honnêtes et équitables.
-            </p>
-
-            <ul className="flex-row-center">
-                <li className="p-4 pl-0">
-                    <a href="#" className="btn-purple-icon">
-                        Commander
-                        <FontAwesomeIcon icon={faArrowRight} />
-                    </a>
-                </li>
-            </ul> */}
 
         </section>
 

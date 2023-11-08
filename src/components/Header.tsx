@@ -2,6 +2,8 @@ import React from "react";
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import logo from "../../public/assets/logo.png";
+
 import HeaderLi from "./HeaderLi";
 
 
@@ -10,7 +12,11 @@ export default function Header() {
     return (
 
         <header id="/" className="w-full h-auto py-2 px-10 fixed backdrop-blur-sm flex-row-center-between z-50">
-            <a href="#"><div className="h-14 w-14 rounded-full bg-white"></div></a>
+            <a href="#">
+                <img src={ logo } alt="" className="w-36"/>
+                {/* <div className="h-14 w-14 rounded-full bg-white">
+                    </div> */}
+            </a>
             <nav>
                 <ul className="flex-row-center-center">
                     <HeaderLi path="#" name="Accueil"/>
