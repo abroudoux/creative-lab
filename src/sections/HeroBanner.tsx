@@ -22,7 +22,7 @@ export default function HeroBanner() {
                         </a>
                     </li>
                     <li className="p-4">
-                        <a href="#products" className="btn-black">
+                        <a href="#products" className="btn-white">
                             Produits
                         </a>
                     </li>

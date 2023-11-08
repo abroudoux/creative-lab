@@ -36,13 +36,13 @@ export default function Products() {
             <h2 className="text-4xl text-white font-bold">Nos Produits</h2>
 
             <p className="mt-6 text-lg leading-8 text-grey-light">
-                Exporez la diversité des jeux proposés par Dawn au travers de 3 coffrets concus pour vos soirées
+                Exporez la diversité des jeux proposés par <strong className="text-white font-medium">Dawn </strong> au travers de 3 coffrets concus pour vos soirées
             </p>
 
-            <div className="w-full flex-row-center-between mt-16">
-                    <Card title="Jack"/>
-                    <Card title="Queen"/>
-                    <Card title="King"/>
+            <div className="w-full flex-row-start-between mt-16">
+                    <Card title="Jack" price="99,95€" caracteristiques={["Jeu de 52 cartes", "Boitier sécurisé", "Personnalisation des cartes via l'application",]}/>
+                    <Card title="Queen" price="249,99€" caracteristiques={["Jeu de 52 cartes", "Boitier sécurisé", "Personnalisation des cartes via l'application", "250 jeux de cartes uniques"]}/>
+                    <Card title="King" price="699,99€" caracteristiques={["Jeu de 52 cartes", "Boitier sécurisé", "Personnalisation des cartes via l'application", "250 jeux de cartes uniques", "Tapis de carte personnalisable", "500 jetons de joker numériques", "2 dés numériques", "4 pions holographiques"]}/>
                 </div>
 
         </section>
