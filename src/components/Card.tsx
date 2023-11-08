@@ -5,6 +5,8 @@ import "../style/card.scss";
 
 type CardProps = {
     title: string;
+    price : string;
+    caracteristiques : string[];
 };
 
 const Card : FC<CardProps> = ( props ) => {
@@ -19,6 +21,13 @@ const Card : FC<CardProps> = ( props ) => {
                     </h3>
                 </div>
             </div>
+            <p className="text-purple font-bold mt-4 text-2xl">{ props.price }</p>
+            <p className="text-white text-xl font-normal mt-3">Ce coffret contient :</p>
+            <ul>
+                {props.caracteristiques.map((caracteristique, index) => (
+                    <li key={index} className="text-grey-light font-light">{caracteristique}</li>
+                ))}
+            </ul>
         </div>
 
     )

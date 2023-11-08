@@ -8,9 +8,9 @@ export default function Footer() {
 
     return (
 
-        <footer className="w-full p-12 flex-col-center-between border-t-[0.5px]">
+        <footer className="w-full p-12 flex-col-center-between border-t-[0.5px] border-grey-light">
 
-            <a href="/" className="text-3xl w-full font-normal title">dawn</a>
+            <a href="/" className="text-3xl w-full font-bold title">dawn</a>
 
             <div className="flex-row-center-between mt-12">
 

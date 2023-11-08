@@ -11,11 +11,9 @@ export default function Header() {
 
     return (
 
-        <header id="/" className="w-full h-auto py-2 px-10 fixed backdrop-blur-sm flex-row-center-between z-50">
+        <header id="/" className="w-full h-auto py-2 px-10 fixed backdrop-blur-sm border-b-[0.5px] border-grey-light flex-row-center-between z-50">
             <a href="#">
                 <img src={ logo } alt="" className="w-36"/>
-                {/* <div className="h-14 w-14 rounded-full bg-white">
-                    </div> */}
             </a>
             <nav>
                 <ul className="flex-row-center-center">
