@@ -4,7 +4,9 @@ import "../style/card.scss";
 
 
 type CardProps = {
-    title: string;
+    img ? : string;
+    alt ? : string;
+    title : string;
     price : string;
     caracteristiques : string[];
 };
@@ -13,12 +15,12 @@ const Card : FC<CardProps> = ( props ) => {
 
     return (
 
-        <div className=" flex flex-col items-start">
-            <div className="card h-96 w-full flex-row-center-center border-gradient p-0.5 rounded-lg">
-                <div className="h-full w-80 flex justify-start items-end py-2 px-3 bg-grey-dark rounded-lg">
-                    <h3 className="text-base font-normal text-grey-light">
-                        { props.title }
-                    </h3>
+        <div className="flex flex-col items-start">
+            <h3 className="text-3xl mb-3 font-semibold text-white">{ props.title }</h3>
+            <div className="card h-auto w-full flex-row-center-center border-gradient p-0.5 rounded-lg">
+                <div className="h-full w-80 flex justify-start items-end bg-grey-dark rounded-lg">
+                    <img src={ props.img } alt={ props.alt } className="cover"/>
+
                 </div>
             </div>
             <p className="text-purple font-bold mt-4 text-2xl">{ props.price }</p>
