@@ -6,9 +6,12 @@
 :root {
     --purple: #8E4EC6;
     --purple-light: #D19DFF;
+    --purple-borders: #664282;
+    --purple-interractive: #3D224E;
     --black: #18111B;
+    --black-purple: #1E1523;
     --white: #ECD9FA;
-    --grey-light: #EBEDF0;
+    --grey-light: #f5f1ffb7;
     --grey-light-lighten: #f5f6f7;
     --grey-dark: #2F2F2F;
     --grey-dark-lighten: #393939;
@@ -86,13 +89,9 @@ body::-webkit-scrollbar {
     @apply btn-purple gap-2;
 }
 
-/* .btn-grey-dark {
-    @apply btn text-blue-light bg-grey-dark hover:bg-grey-dark-lighten;
+.btn-black {
+    @apply btn bg-black text-white border-2 border-white;
 }
-
-.btn-grey-dark-icon {
-    @apply btn-grey-dark gap-2;
-} */
 
 .btn-white {
     @apply btn text-grey-dark bg-grey-light border-grey-light border-2 hover:bg-black hover:border-white hover:text-white;

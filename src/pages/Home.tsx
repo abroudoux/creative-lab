@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Theme } from '@radix-ui/themes';
 
 import HeroBanner from '../sections/HeroBanner';
 import About from '../sections/About';
@@ -28,11 +29,12 @@ export default function Home() {
 
 		<section>
 
-			<span className='bubble'></span>
-
-			<HeroBanner/>
-			<About/>
-			<Products/>
+			{/* <Theme accentColor="violet" appearance="dark"> */}
+				<span className='bubble'></span>
+				<HeroBanner/>
+				<About/>
+				<Products/>
+			{/* </Theme> */}
 
 		</section>
   	)
