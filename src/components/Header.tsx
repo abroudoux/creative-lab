@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import logo from "../../public/assets/logo.png";
+import logo from "../assets/logo.png";
 
 import HeaderLi from "./HeaderLi";
 

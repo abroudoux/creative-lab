@@ -2,8 +2,9 @@ import React from "react";
 
 import Card from "../components/Card";
 
-import CoffretRoi from "../../public/assets/coffret-roi.png";
-import CoffretDame from "../../public/assets/coffret-dame.png"
+import CoffretRoi from "../assets/coffret-roi.png";
+import CoffretValet from "../assets/coffret-valet.png";
+import CoffretReine from "../assets/coffret-reine.png";
 
 
 export default function Products() {
@@ -43,10 +44,15 @@ export default function Products() {
             </p>
 
             <div className="w-full flex-row-start-between mt-16">
-                    <Card title="Valet de Trèfle" price="99,95€" caracteristiques={["Jeu de 52 cartes", "Boitier sécurisé", "Personnalisation des cartes via l'application",]}/>
-                    <Card img={ CoffretDame } alt="Coffret Roi de Cœur"  title="Dame de Cœur" price="249,99€" caracteristiques={["Jeu de 52 cartes", "Boitier sécurisé", "Personnalisation des cartes via l'application", "250 jeux de cartes uniques"]}/>
-                    <Card img={ CoffretRoi } alt="Coffret Roi de Pic" title="Roi de Pic" price="699,99€" caracteristiques={["Jeu de 52 cartes", "Boitier sécurisé", "Personnalisation des cartes via l'application", "250 jeux de cartes uniques", "Tapis de carte personnalisable", "500 jetons de joker numériques", "2 dés numériques", "4 pions holographiques"]}/>
-                </div>
+                <Card img={ CoffretValet } title="Valet de Trèfle" price="99,95€" caracteristiques={["Jeu de 52 cartes", "Boitier sécurisé", "Personnalisation des cartes via l'application",]}/>
+                <Card img={ CoffretReine } alt="Coffret Roi de Cœur"  title="Dame de Cœur" price="249,99€" caracteristiques={["Jeu de 52 cartes", "Boitier sécurisé", "Personnalisation des cartes via l'application", "250 jeux de cartes uniques"]}/>
+                <Card img={ CoffretRoi } alt="Coffret Roi de Pic" title="Roi de Pic" price="699,99€" caracteristiques={["Jeu de 52 cartes", "Boitier sécurisé", "Personnalisation des cartes via l'application", "250 jeux de cartes uniques", "Tapis de carte personnalisable", "500 jetons de joker numériques", "2 dés numériques", "4 pions holographiques"]}/>
+            </div>
+
+            <div className="flex-col-center-center mt-16 gap-6">
+                <h2 className="text-2xl max-w-2xl text-center">Vous souhaitez recevoir votre coffret et commencer à profiter de l'expérience Dawn ?</h2>
+                <button className="btn-purple">Commander</button>
+            </div>
 
         </section>
 
