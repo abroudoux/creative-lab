@@ -6,7 +6,8 @@
         ],
         "types": [
             "vite/client", 
-            "@testing-library/jest-dom"
+            "@testing-library/jest-dom",
+            "node"
         ],
         "allowJs": true,
         "skipLibCheck": true,

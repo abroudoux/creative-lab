@@ -2,6 +2,10 @@ import React from "react";
 
 import Card from "../components/Card";
 
+import CoffretRoi from "../assets/coffret-roi.png";
+import CoffretValet from "../assets/coffret-valet.png";
+import CoffretReine from "../assets/coffret-reine.png";
+
 
 export default function Products() {
 
@@ -9,7 +13,7 @@ export default function Products() {
 
         <section id="products" className="px-20 py-44 relative isolate overflow-hidden">
 
-                <div className="absolute inset-0 -z-10 overflow-hidden">
+                <div className="absolute inset-0 -z-10 overflow-hidden opacity-30">
                     <svg
                     className="absolute left-[max(50%,25rem)] top-24 h-[64rem] w-[128rem] -translate-x-1/2 stroke-purple-borders [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
                     aria-hidden="true">
@@ -40,10 +44,15 @@ export default function Products() {
             </p>
 
             <div className="w-full flex-row-start-between mt-16">
-                    <Card title="Jack" price="99,95€" caracteristiques={["Jeu de 52 cartes", "Boitier sécurisé", "Personnalisation des cartes via l'application",]}/>
-                    <Card title="Queen" price="249,99€" caracteristiques={["Jeu de 52 cartes", "Boitier sécurisé", "Personnalisation des cartes via l'application", "250 jeux de cartes uniques"]}/>
-                    <Card title="King" price="699,99€" caracteristiques={["Jeu de 52 cartes", "Boitier sécurisé", "Personnalisation des cartes via l'application", "250 jeux de cartes uniques", "Tapis de carte personnalisable", "500 jetons de joker numériques", "2 dés numériques", "4 pions holographiques"]}/>
-                </div>
+                <Card img={ CoffretValet } title="Valet de Trèfle" price="99,95€" caracteristiques={["Jeu de 52 cartes", "Boitier sécurisé", "Personnalisation des cartes via l'application",]}/>
+                <Card img={ CoffretReine } alt="Coffret Roi de Cœur"  title="Dame de Cœur" price="249,99€" caracteristiques={["Jeu de 52 cartes", "Boitier sécurisé", "Personnalisation des cartes via l'application", "250 jeux de cartes uniques"]}/>
+                <Card img={ CoffretRoi } alt="Coffret Roi de Pic" title="Roi de Pic" price="699,99€" caracteristiques={["Jeu de 52 cartes", "Boitier sécurisé", "Personnalisation des cartes via l'application", "250 jeux de cartes uniques", "Tapis de carte personnalisable", "500 jetons de joker numériques", "2 dés numériques", "4 pions holographiques"]}/>
+            </div>
+
+            <div className="flex-col-center-center mt-16 gap-6">
+                <h2 className="text-2xl max-w-2xl text-center">Vous souhaitez recevoir votre coffret et commencer à profiter de l'expérience Dawn ?</h2>
+                <button className="btn-purple">Commander</button>
+            </div>
 
         </section>
 
