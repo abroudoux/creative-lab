@@ -28,14 +28,10 @@ export default function Home() {
 	return (
 
 		<section>
-
-			{/* <Theme accentColor="violet" appearance="dark"> */}
 				<span className='bubble'></span>
 				<HeroBanner/>
 				<About/>
 				<Products/>
-			{/* </Theme> */}
-
 		</section>
   	)
 
