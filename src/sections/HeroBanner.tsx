@@ -13,7 +13,7 @@ export default function HeroBanner() {
             <div className="w-2/4 h-auto py-6 flex flex-col gap-2">
                 {/* <span className="text-4xl text-grey-light font-extralight title">dawn</span> */}
                 <h1 className="text-8xl font-bold">Les cartes nouvelle génération</h1>
-                <p className="text-lg text-grey-light font-light mt-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio totam sit consequatur alias voluptatum.</p>
+                <p className="text-lg text-grey-light font-light mt-8">Découvrez le futur du jeu de cartes, un seul paquet pour une infinité de jeux</p>
                 <ul className="flex-row-center mt-10">
                     <li className="p-4 pl-0">
                         <a href="#about" className="btn-purple-icon">
